@@ -1,8 +1,5 @@
 ### 10-615 Art/ML Project 2: Poly Paint
 
-This project aims to reconstruct images using polygons.
+Incredibly inspired by the guest speaker presentation on FRIDA, given by Peter Schaldenbrand, we wanted to expand on his idea for this project. To fit within the scale of this project and the more constrained time frame, we decided to implement a simpler version of FRIDA in simulation only. We are able to feed the model digital drawings someone has done and have it recreate the image with a select number of polygons only. In a similar fashion to the technique of pointillism, Polypaint is able to take in any image (could be a user’s drawing or a photograph) and recreate the shading, color, and shape using a more limited “brush stroke”. 
 
-### Improvements:
-- evenly spaced initialization
-- potential adding to hot spots?
-- add loss for places with no triangles (due to white/blank)
+Polypaint takes in any high-resolution image and generates a reconstruction of that image using an user-defined amount of polygons. To do this, we went off of the FRIDA code structure that uses gradient descent to optimize the painting. Our current model will reconstruct images using different rotations of triangles and can incorporate opacity into its simulation results. At the end of this project, we were able to successfully reconstruct a handful of digitally drawn images. 
